@@ -1,1 +1,3 @@
-# banky
+# maven-project
+
+Simple Maven Project

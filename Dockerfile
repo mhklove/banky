@@ -1,14 +1,10 @@
-FROM ubuntu:18.04
-
-MAINTAINER Michelle
+# Pull base image 
+From ubuntu:18.04
 RUN apt update
 RUN apt install apache2 -y
-RUN apt install 
-
-RUN apt clean all
-
 EXPOSE 80
 
-COPY ./index.html /var/www/html
 
-CMD apachectl -D FOREGROUND
+# Maintainer 
+MAINTAINER "kserge2001@yahoo.fr" 
+COPY ./webapp.war /usr/local/tomcat/webapps
